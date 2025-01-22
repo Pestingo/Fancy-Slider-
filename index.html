@@ -1,65 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aquatic Animals Landing Page</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <title>fancy slider using html css and javascript</title>
+  <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-  <main>
-    <div>
-      <span>discover</span>
-      <h1>aquatic animals</h1>
-      <hr>
-      <p>Beauty and mystery are hidden under the sea. Explore with our application to know about Aquatic Animals.</p>
-      <a href="#">download app</a>
-    </div>
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide swiper-slide--one" data-background="https://images.unsplash.com/photo-1628944682084-831f35256163?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">
-          <div>
-            <h2>Jellyfish</h2>
-            <p>Jellyfish and sea jellies are the informal common names given to the medusa-phase of certain gelatinous members of the subphylum Medusozoa, a major part of the phylum Cnidaria.</p>
-            <a href="https://en.wikipedia.org/wiki/Jellyfish" target="_blank">explore</a>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+Please note, that you can apply .m--global-blending-active to .fnc-slider 
+to enable blend-mode for all background-images or apply .m--blend-bg-active
+to some specific slides (.fnc-slide). It's disabled by default in this demo,
+because it requires specific images, where more than 50% of bg is transparent or monotone
+-->
+<div class="demo-cont">
+    <!-- slider start -->
+    <div class="fnc-slider example-slider">
+      <div class="fnc-slider__slides">
+        <!-- slide start -->
+        <div class="fnc-slide m--blend-green m--active-slide">
+          <div class="fnc-slide__inner">
+            <div class="fnc-slide__mask">
+              <div class="fnc-slide__mask-inner"></div>
+            </div>
+            <div class="fnc-slide__content">
+              <h2 class="fnc-slide__heading">
+                <div class="fnc-slide__heading-line">
+                  <span>Black</span>
+                </div>
+                <div class="fnc-slide__heading-line">
+                  <span>Widow</span>
+                </div>
+              </h2>
+              <button type="button" class="fnc-slide__action-btn">
+                Credits
+                <span data-text="Credits">Credits</span>
+              </button>
+            </div>
           </div>
         </div>
-        <div class="swiper-slide swiper-slide--two" data-background="https://images.unsplash.com/photo-1515309025403-4b0184873cef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80">
-          <div>
-            <h2>Seahorse</h2>
-            <p>Seahorses are mainly found in shallow tropical and temperate salt water throughout the world. They live in sheltered areas such as seagrass beds, estuaries, coral reefs, and mangroves.</p>
-            <a href="https://en.wikipedia.org/wiki/Seahorse" target="_blank">explore</a>
+        <!-- slide end -->
+        <!-- slide start -->
+        <div class="fnc-slide m--blend-dark">
+          <div class="fnc-slide__inner">
+            <div class="fnc-slide__mask">
+              <div class="fnc-slide__mask-inner"></div>
+            </div>
+            <div class="fnc-slide__content">
+              <h2 class="fnc-slide__heading">
+                <div class="fnc-slide__heading-line">
+                  <span>Captain</span>
+                </div>
+                <div class="fnc-slide__heading-line">
+                  <span>America</span>
+                </div>
+              </h2>
+              <button type="button" class="fnc-slide__action-btn">
+                Credits
+                <span data-text="Credits">Credits</span>
+              </button>
+            </div>
           </div>
         </div>
-        <div class="swiper-slide swiper-slide--three" data-background="https://images.unsplash.com/photo-1545671913-b89ac1b4ac10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
-          <div>
-            <h2>Octopus</h2>
-            <p>Octopuses inhabit various regions of the ocean, including coral reefs, pelagic waters, and the seabed; some live in the intertidal zone and others at abyssal depths.</p>
-            <a href="https://en.wikipedia.org/wiki/Octopus" target="_blank">explore</a>
+        <!-- slide end -->
+        <!-- slide start -->
+        <div class="fnc-slide m--blend-red">
+          <div class="fnc-slide__inner">
+            <div class="fnc-slide__mask">
+              <div class="fnc-slide__mask-inner"></div>
+            </div>
+            <div class="fnc-slide__content">
+              <h2 class="fnc-slide__heading">
+                <div class="fnc-slide__heading-line">
+                  <span>Iron</span>
+                </div>
+                <div class="fnc-slide__heading-line">
+                  <span>Man</span>
+                </div>
+              </h2>
+              <button type="button" class="fnc-slide__action-btn">
+                Credits
+                <span data-text="Credits">Credits</span>
+              </button>
+            </div>
           </div>
         </div>
-        <div class="swiper-slide swiper-slide--four" data-background="https://images.unsplash.com/photo-1598977123118-4e30ba3c4f5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
-          <div>
-            <h2>Shark</h2>
-            <p>Sharks are a group of elasmobranch fish characterized by a cartilaginous skeleton, five to seven gill slits on the sides of the head, and pectoral fins that are not fused to the head.</p>
-            <a href="https://en.wikipedia.org/wiki/Shark" target="_blank">explore</a>
+        <!-- slide end -->
+        <!-- slide start -->
+        <div class="fnc-slide m--blend-blue">
+          <div class="fnc-slide__inner">
+            <div class="fnc-slide__mask">
+              <div class="fnc-slide__mask-inner"></div>
+            </div>
+            <div class="fnc-slide__content">
+              <h2 class="fnc-slide__heading">
+                <div class="fnc-slide__heading-line">
+                  <span>Thor</span>
+                </div>
+                <div class="fnc-slide__heading-line">
+                  <span>Just Thor</span>
+                </div>
+              </h2>
+              <button type="button" class="fnc-slide__action-btn">
+                Credits
+                <span data-text="Credits">Credits</span>
+              </button>
+            </div>
           </div>
         </div>
-        <div class="swiper-slide swiper-slide--five" data-background="https://images.unsplash.com/photo-1570481662006-a3a1374699e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80">
-          <div>
-            <h2>Dolphin</h2>
-            <p>Dolphins are widespread. Most species prefer the warm waters of the tropic zones, but some, such as the right whale dolphin, prefer colder climates.</p>
-            <a href="https://en.wikipedia.org/wiki/Dolphin" target="_blank">explore</a>
-          </div>
-        </div>
+        <!-- slide end -->
       </div>
-      <div class="swiper-pagination"></div>
+      <nav class="fnc-nav">
+        <div class="fnc-nav__bgs">
+          <div class="fnc-nav__bg m--navbg-green m--active-nav-bg"></div>
+          <div class="fnc-nav__bg m--navbg-dark"></div>
+          <div class="fnc-nav__bg m--navbg-red"></div>
+          <div class="fnc-nav__bg m--navbg-blue"></div>
+        </div>
+        <div class="fnc-nav__controls">
+          <button class="fnc-nav__control">
+            Black Widow
+            <span class="fnc-nav__control-progress"></span>
+          </button>
+          <button class="fnc-nav__control">
+            Captain America
+            <span class="fnc-nav__control-progress"></span>
+          </button>
+          <button class="fnc-nav__control">
+            Iron Man
+            <span class="fnc-nav__control-progress"></span>
+          </button>
+          <button class="fnc-nav__control">
+            Thor
+            <span class="fnc-nav__control-progress"></span>
+          </button>
+        </div>
+      </nav>
     </div>
-    <img src="https://cdn.pixabay.com/photo/2021/11/04/19/39/jellyfish-6769173_960_720.png" alt="Jellyfish background" class="bg" loading="lazy">
-    <img src="https://cdn.pixabay.com/photo/2012/04/13/13/57/scallop-32506_960_720.png" alt="Scallop background" class="bg2" loading="lazy">
-  </main>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
+    <!-- slider end -->
+    <div class="demo-cont__credits">
+      <div class="demo-cont__credits-close"></div>
+      <h2 class="demo-cont__credits-heading">Made by</h2>
+      <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/142996/profile/profile-512_5.jpg" alt="" class="demo-cont__credits-img" />
+      <h3 class="demo-cont__credits-name">Pestingo</h3>
+      <h2 class="demo-cont__credits-heading">Based on</h2>
+      <a href="https://dribbble.com/shots/2375246-Fashion-Butique-slider-animation" target="_blank" class="demo-cont__credits-link">Concept by Kreativa Studio</a>
+      <h4 class="demo-cont__credits-blend">Global Blend Mode</h4>
+      <div class="colorful-switch">
+        <input type="checkbox" class="colorful-switch__checkbox js-activate-global-blending" id="colorful-switch-cb" />
+        <label class="colorful-switch__label" for="colorful-switch-cb">
+          <span class="colorful-switch__bg"></span>
+          <span class="colorful-switch__dot"></span>
+          <span class="colorful-switch__on">
+            <span class="colorful-switch__on__inner"></span>
+          </span>
+          <span class="colorful-switch__off"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+    <script src="main.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
 </body>
 </html>

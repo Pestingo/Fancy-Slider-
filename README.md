@@ -68,7 +68,7 @@
 ---
 
 #### **Demo**
-- Check out the live demo [here](#) (replace with your live demo link if available).
+- Check out the live demo https://fancy-slider-javascript-css-html.netlify.app/
 
 ---
 
